@@ -5,18 +5,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>UCLA Badminton App coming soon!</h1>
+        <ul>
+          <li>
+            <u><a style={{ all: 'unset' }} href="https://www.facebook.com/groups/240268165585175">Facebook</a></u>
+          </li>
+          <li>
+            <u><a style={{ all: 'unset' }} href="https://www.instagram.com/uclabadminton/">Instagram</a></u>
+          </li>
+          <li>
+            uclabadminton@gmail.com
+          </li>
+        </ul>
       </header>
     </div>
   );
