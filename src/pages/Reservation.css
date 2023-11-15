@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.flexbox {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexbox > * {
+  margin: 5px;
+  text-align: center;
+  border: 1px solid red;
+  flex-basis: calc(33.33% - 10px);
+}
+.flexbox > *:before {
+  content: '';
+  padding-bottom: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
