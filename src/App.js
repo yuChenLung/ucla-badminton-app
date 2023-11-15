@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from './components/NavBar';
+import Home from './pages/Home.js'
+import Reservation from './pages/Reservation.js'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>UCLA Badminton App coming soon!</h1>
-        <ul>
-          <li>
-            <u><a style={{ all: 'unset' }} href="https://www.facebook.com/groups/240268165585175">Facebook</a></u>
-          </li>
-          <li>
-            <u><a style={{ all: 'unset' }} href="https://www.instagram.com/uclabadminton/">Instagram</a></u>
-          </li>
-          <li>
-            uclabadminton@gmail.com
-          </li>
-        </ul>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <BrowserRouter>
+                <NavBar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/reservation" element={<Reservation />} />
+                    </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;
